@@ -1,0 +1,74 @@
+
+.modal-window {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 800px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 2px 2px 4px #747474;
+} 
+
+#calculateButton {
+	width: 100px;
+	height: 37px;
+	font-family: OpenSans-Semibold;	
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	background: #99c50a;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+
+#calc_wrapper {
+	background: #ff8314;
+	color: #fff;
+	width: 468px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 10px 0 10px 0;
+
+
+}
+
+#closeButton {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	font-family: OpenSans-Semibold;	
+	font-size: 24px;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+	background: #99c50a;
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+form {
+  font: 14px Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+fieldset {
+  	border: 1px solid #99c50a;
+ 	margin: 0;
+  	padding: 5px;
+  	font-family: OpenSans-Semibold;	
+	font-size: 16px;
+	text-align: center;
+}
+
+input {
+  font: 14px Helvetica, Arial, sans-serif;
+  margin: 0 5px 0 0;
+  }

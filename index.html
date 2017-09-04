@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Дмитрий Аврамец">
+  <title>Сайт на Flex со слайдером</title>
+  <link href="src/css/command.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+
+<!--HEADER-->
+<header class="header">
+	<div class="header__inner">
+	<div class="logo"> 
+	<a href="#">
+	<img src="src/image/logo-pizzame.png" alt="logo-pizzame">
+	</a>
+	</div>
+	<nav class="nav-menu"> 
+		<ul>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">SERVICES</a></li>
+		<li><a href="#">PORTFOLIO</a></li>
+		<li><a href="#">BLOG</a></li>
+		<li><a href="#">CONTACTS</a></li>		
+		</ul>
+	</nav>
+		</div>
+</header>
+<!--Banner-->
+<div class="banner-top">
+	<div class="slider" id="slider">
+		<div class="slider__slide fade"><img src="src/image/slider/pizza1.jpg"></div>
+		<div class="slider__slide fade"><img src="src/image/slider/pizza2.jpg"></div>
+		<div class="slider__slide fade"><img src="src/image/slider/pizza3.jpg"></div>
+		<div class="slider__slide fade"><img src="src/image/slider/pizza4.jpg"></div>
+	</div>
+<div class="banner-caption-wrapper">
+<div class="banner-caption"><span>Taste our Pizza</span><br/>
+Give Yourself a Pleasure</div> 
+<div class="banner-button" id="openButton"><a href="#">Make an Order</a></div>
+</div>
+<div class="arrow-nav-wrapper">
+<div class="arrow-nav-left" id="arrow_left"><a href="#"></a></div>
+<div class="arrow-nav-right" id="arrow_right"><a href="#"></a></div>
+</div>
+</div>
+
+<!--MAIN-->
+<main class="main">  <!--Основное содержимое-->
+<!--SECTION 1-->
+<section class="section1"> 
+<p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation. 
+Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla pariatur. 
+</p>
+</section>
+
+<!--SECTION 2-->
+<section class="section2"> 
+	<div class="section2__wrapper1">
+	<h2>Why you should choose our pizza</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	Ut enim ad minim veniam, quis nostrud exercitation.</p>
+	</div>
+	<div class="section2__wrapper2">
+	<h2>Wonderful recipes of our products</h2>
+	<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+	dolore eu fugiat nulla pariatur.</p>
+	</div>
+</section>
+
+<!--SECTION 3-->
+<section class="section3"> 
+	<div class="section3__wrapper">
+		<img src="src/image/section3_pic_01.png">
+		<h3>Ideas everywere</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="section3__wrapper">
+		<img src="src/image/section3_pic_02.png">
+		<h3>All countries</h3>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+		dolore eu fugiat nulla pariatur.</p>
+	</div>
+	<div class="section3__wrapper">
+		<img src="src/image/section3_pic_03.png">
+		<h3>Configuration</h3>
+		<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<div class="section3__wrapper">
+		<img src="src/image/section3_pic_04.png">
+		<h3>Brilliant</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+		sed do eiusmod tempor incididunt ut labore.</p>
+	</div>
+</section>
+
+<!--SECTION 4-->
+<section class="section4">
+	<h1>Hight quality standards</h1>
+	<h2>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	Ut enim ad minim veniam, quis nostrud exercitation.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	Ut enim ad minim veniam, quis nostrud exercitation.</p>
+</section>
+
+<!--SECTION 5-->	
+<section class="section5">
+		<div class="section5__wrapper">
+				586 <div>projects</div>
+		</div>
+		<div class="section5__wrapper">
+				365 <div>days</div>
+		</div>
+		<div class="section5__wrapper">
+				126 <div>applications</div>
+		</div>
+		<div class="section5__wrapper">
+				1057 <div>clients</div>
+		</div>				
+	
+</section>
+
+</main>
+
+<footer class="footer">
+		<div class="footer__copy">
+	Dmitri Avramets, 2017
+	</div>
+</footer> 
+
+</div>
+
+<!--Slaider script-->
+<script src="src/js/script_slider.js"></script>
+
+
+<!--Modal window "Pizza calculator" for make order -->
+
+<div class="modal-window" style="display: none;" id="modalWindow">
+	<form action="" name="pizza_calculator" id="pizza_calculator">
+	<fieldset>
+    <legend>PIZZA CALCULATOR</legend>
+
+    <h3>Size</h3>
+    <p>
+    <label><input type="radio" name="size" value="small">Small (7 rub)</label>
+    <label><input type="radio" name="size" value="medium" checked>Medium (9 rub)</label>
+    <label><input type="radio" name="size" value="large">Large (11 rub)</label>
+    </p>
+   <h3>Additional cheese</h3>
+    <p>
+    <label><input type="radio" name="cheese" value=true checked>Yes  (+2 rub)</label>
+    <label><input type="radio" name="cheese" value=false>No</label>
+    </p>
+    <h3>Add Ingredients</h3> 
+	<p><label><input type="checkbox" name="ingredients" value="mushrooms">Mushrooms (+1 rub)</label></p>
+	<p><label><input type="checkbox" name="ingredients" value="tomatoes" checked>Tomatoes (+1 rub)</label></p>
+	<p><label><input type="checkbox" name="ingredients" value="sausage">Sausage (+2 rub)</label></p>
+	<p><label><input type="checkbox" name="ingredients" value="beef">Beef (+3 rub)</label></p>
+	
+    <h3><label><input type="checkbox" name="delivery">Delivery (+5 rub)</label></h3>
+	<hr/>
+	<div id="calc_wrapper">1</div>
+	<input type="submit" value="Send order" id="calculateButton">
+    <div id="submitResult"> </div>
+    </fieldset>
+ 	</form>
+
+	<button id="closeButton">x</button>
+</div>
+
+<script src="src/js/order.js"></script>
+
+</body>
+</html>

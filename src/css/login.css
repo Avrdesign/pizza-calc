@@ -1,0 +1,26 @@
+.login-button {
+	width: 100px;
+	height: 37px;
+	font-family: OpenSans-Semibold;	
+	font-size: 13px;
+	color: #f2f8e0;
+	text-align: center;
+	background: #99c50a;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+.login-button a {
+	padding-top: 9px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+
+} 
+.login-button a:hover {
+    text-decoration: none;
+	color: #fff;
+} 
